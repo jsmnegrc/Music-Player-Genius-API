@@ -35,7 +35,7 @@ body {
 .music-container {
   flex-grow: 1;
   max-width: 450px;
-  overflow: auto; /* Use 'auto' instead of 'scroll' */
+  overflow: auto;
 }
 
 .music-container::-webkit-scrollbar {
@@ -52,7 +52,7 @@ body {
   color: inherit;
 }
 a {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   color: rgb(211, 211, 211);
 }
 
