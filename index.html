@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <img
+          src="https://images.unsplash.com/photo-1601752943749-7dd8d89f407a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk1NDg2MTZ8&ixlib=rb-4.0.3&q=85"
+        />
+      </div>
+      <div class="music-card">
+        <div class="music-details">
+          <img
+            src="https://images.unsplash.com/photo-1698711864764-c9150adc9f36?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk1Mzg5Mjl8&ixlib=rb-4.0.3&q=85"
+            alt="Artist Image"
+            class="artist-image"
+          />
+          <h5 id="songTitle">All Too Well (Taylor's Version)</h5>
+          <p id="artist">Taylor Swift</p>
+          <div id="music-time">
+            <span id="currentTime">0:00</span>
+            <span id="totalTime">10:13</span>
+          </div>
+          <div id="range-slider">
+            <input type="range" id="musicSlider" min="1" max="100" value="50" />
+          </div>
+          <div class="player-controls">
+            <i
+              class="fa-solid fa-backward-step fa-3x"
+              style="color: #a85474"
+            ></i>
+            <i
+              id="playPauseBtn"
+              class="fa-solid fa-circle-play fa-3x"
+              style="color: #922a56"
+            ></i>
+            <i
+              class="fa-solid fa-forward-step fa-3x"
+              style="color: #a85474"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="music-container">
+      <div class="links">
+        <h2 class="header1">Explore</h2>
+        <p>
+          <a href="#" onclick="showTab('lyricsContainer')">Lyrics</a>
+          <a href="#" onclick="showTab('otherAlbumsTab')">Other Albums</a>
+          <a href="#" onclick="showTab('relatedArtistTab')">Related Artists</a>
+        </p>
+      </div>
+      <div id="lyricsContainer">
+        <p id="lyricsContent"></p>
+      </div>
+      <div id="otherAlbumsTab" style="display: none">
+        <p>Other Albums content goes here...</p>
+      </div>
+      <div id="relatedArtistTab" style="display: none">
+        <p>Related Artist content goes here...</p>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/ea05aa3642.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

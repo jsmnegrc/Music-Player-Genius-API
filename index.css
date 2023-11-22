@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.music-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 270px;
+  height: 400px;
+  margin: 50px auto;
+  position: relative;
+  margin-right: 20px;
+}
+
+.music-container {
+  flex-grow: 1;
+  max-width: 450px;
+  overflow: auto; /* Use 'auto' instead of 'scroll' */
+}
+
+.music-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.music-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+#lyricsContent {
+  height: 250px;
+  text-decoration: none;
+  color: inherit;
+}
+a {
+  text-decoration: none; /* Remove underline */
+  color: rgb(211, 211, 211);
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(211, 211, 211);
+  justify-content: space-between;
+}
+.links a {
+  margin-right: 3rem;
+}
+h2.header1 {
+  margin-bottom: 3rem;
+  color: rgb(211, 211, 211);
+}
+
+.artist-image {
+  border-radius: 6px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.music-details {
+  padding: 20px;
+  text-align: center;
+}
+
+#songTitle {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 2rem;
+  color: #2c041c;
+}
+
+#artist {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #2c041c;
+}
+
+#music-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 13px;
+  color: #666;
+}
+
+.player-controls i {
+  margin-top: 1rem;
+}
+#playPauseBtn {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.fa-backward-step,
+.fa-circle-play {
+  margin-right: 20px;
+}
+
+#range-slider {
+  width: 100%;
+  margin: 0;
+}
+
+#musicSlider {
+  width: 100%;
+  height: 5px;
+  background: #702464;
+  outline: none;
+  appearance: none;
+}
+
+#musicSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 4px solid #702464;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.player-controls {
+  margin-top: 1rem;
+}
+
+.player-controls button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+}
